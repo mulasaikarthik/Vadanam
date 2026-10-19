@@ -1,0 +1,8 @@
+# Supabase CLI configuration for Vadanam
+# Used by: supabase link / supabase functions deploy
+project_id = "cwkthhowrxdvrmuornkk"
+
+[functions.gemini-chat]
+# Keep platform-level JWT verification ON. The function additionally
+# re-validates the user with auth.getUser() and checks team membership.
+verify_jwt = true

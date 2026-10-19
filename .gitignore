@@ -1,0 +1,32 @@
+# dependencies — NEVER commit these (committed node_modules breaks Vercel
+# with BUILD_UTILS_SPAWN_126: executable permissions are lost in git)
+node_modules/
+
+# build output
+dist/
+dist-ssr/
+
+# environment secrets (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+
+# vercel
+.vercel/
+
+# logs & caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+.cache/
+.smoke/
+
+# editor/OS noise
+.DS_Store
+Thumbs.db
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
